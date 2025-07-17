@@ -1,39 +1,87 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Автосалон Prestige Motors</title>
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prestige Motors - Автосалон</title>
+  <link rel="stylesheet" href="./index.css" />
 </head>
-
 <body>
 
-    <nav>
-        <div class="nav-container">
-            <div class="logo">Prestige Motors</div>
-            <div class="nav-links">
-                <a href="#home">Головна</a>
-                <a href="#cars">Автомобілі</a>
-                <a href="#services">Послуги</a>
-                <a href="#about">Про нас</a>
-                <a href="#contact">Контакти</a>
-            </div>
-        </div>
-    </nav>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Prestige Motors</div>
+      <div class="nav-links">
+        <a href="#home">Головна</a>
+        <a href="#cars">Автомобілі</a>
+        <a href="#services">Послуги</a>
+        <a href="#about">Про нас</a>
+        <a href="#contact">Контакти</a>
+        <a href="#reviews">Відгуки</a>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <h1 class="welcome">Ласкаво просимо в наш автосалон!</h1>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Знайди своє авто мрії</h1>
-                <p>Нові та вживані автомобілі за найкращими цінами</p>
-                <a href="#" class="btn">Переглянути авто</a>
-            </div>
-        </section>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Знайди своє авто мрії</h1>
+      <p>Нові та вживані автомобілі за найкращими цінами</p>
+      <a href="#cars" class="btn">Переглянути авто</a>
+    </div>
+  </section>
 
-    </main>
+  <section class="section light" id="cars">
+    <h2>Наші автомобілі</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="Авто 1">
+        <h3>Mercedes-Benz C-Class</h3>
+        <p>Комфортний та стильний седан.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80" alt="Авто 2">
+        <h3>BMW X5</h3>
+        <p>Потужний та надійний позашляховик.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=400&q=80" alt="Авто 3">
+        <h3>Audi A4</h3>
+        <p>Сучасний дизайн та технології.</p>
+      </div>
+    </div>
+  </section>
 
+  <section class="section" id="services">
+    <h2>Наші послуги</h2>
+    <p>Обслуговування, кредитування, тест-драйви та багато іншого для вашої зручності.</p>
+  </section>
+
+  <section class="section light" id="about">
+    <h2>Про нас</h2>
+    <p>Ми працюємо з 2005 року і маємо 5 салонів по всій Україні.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Контакти</h2>
+    <p>Email: autosalon@email.com<br>Телефон: +380 99 123 45 67</p>
+  </section>
+
+  <section class="section light" id="reviews">
+    <h2>Відгуки</h2>
+    <form id="comment-form">
+      <textarea id="comment-text" placeholder="Ваш коментар..." required></textarea>
+      <div class="rating" id="rating-stars">
+        <span data-rate="1">★</span>
+        <span data-rate="2">★</span>
+        <span data-rate="3">★</span>
+        <span data-rate="4">★</span>
+        <span data-rate="5">★</span>
+      </div>
+      <button class="btn" type="submit">Надіслати</button>
+    </form>
+    <div id="comments-list"></div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
