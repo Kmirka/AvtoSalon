@@ -27,7 +27,36 @@ nav {
 
 .logo {
   color: #f39c12;
-  font-size: 28px;
+  font-size: 28px;.stars {
+  font-size: 24px;
+  color: #f39c12;
+}
+
+.stars .active {
+  color: #f39c12;
+}
+
+.stars span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.comment {
+  background: #333;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.comment .stars {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.comment .text {
+  color: #ddd;
+}
+
   font-weight: 900;
   letter-spacing: 2px;
   user-select: none;
@@ -47,9 +76,12 @@ nav {
 }
 
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1549921296-3a6b98a8a6c0?auto=format&fit=crop&w=1600&q=80');
+  background-image: url('https://images.unsplash.com/photo-1641874536900-4a2fdc230f32?q=80&w=1198&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   background-size: cover;
-  background-position: center;
+  background-position: 70% 95%;
+  background-attachment: fixed;
+  height: 60vh;
+
   padding: 140px 20px 120px;
   text-align: center;
   position: relative;
