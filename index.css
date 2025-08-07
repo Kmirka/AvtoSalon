@@ -264,3 +264,65 @@ textarea {
     background-image: url('https://images.unsplash.com/photo-1566930450642-c639e92b9433?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   }
 }
+
+/* Rating container */
+.rating {
+  display: inline-block;
+  font-size: 2em;
+  /* Adjust star size */
+  cursor: pointer;
+}
+
+/* Default star color */
+.rating span {
+  color: #ddd;
+  /* Light grey */
+  transition: color 0.3s ease;
+}
+
+/* When hovering over a star, turn it yellow */
+.rating span:hover,
+.rating span:hover~span {
+  color: #ffcc00;
+  /* Yellow */
+}
+
+/* Highlight stars that have been selected */
+.rating span.selected {
+  color: #ffcc00;
+  /* Yellow */
+}
+
+/* Rating container */
+.rating {
+  display: inline-block;
+  font-size: 2em;
+  /* Adjust star size */
+  cursor: pointer;
+}
+
+/* Default star color */
+.rating span {
+  color: #ddd;
+  /* Light grey */
+  transition: color 0.3s ease;
+}
+
+/* When hovering over a star, turn it yellow */
+.rating span:hover,
+.rating span:hover~span {
+  color: #ffcc00;
+  /* Yellow */
+}
+
+/* Highlight stars that have been selected */
+.rating span.selected {
+  color: #ffcc00;
+  /* Yellow */
+}
+
+/* Rating result text */
+.rating-result {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
