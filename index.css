@@ -27,35 +27,37 @@ nav {
 
 .logo {
   color: #f39c12;
-  font-size: 28px;.stars {
-  font-size: 24px;
-  color: #f39c12;
-}
+  font-size: 28px;
 
-.stars .active {
-  color: #f39c12;
-}
+  .stars {
+    font-size: 24px;
+    color: #f39c12;
+  }
 
-.stars span {
-  cursor: pointer;
-  transition: color 0.3s;
-}
+  .stars .active {
+    color: #f39c12;
+  }
 
-.comment {
-  background: #333;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-}
+  .stars span {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
 
-.comment .stars {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+  .comment {
+    background: #333;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
 
-.comment .text {
-  color: #ddd;
-}
+  .comment .stars {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .comment .text {
+    color: #ddd;
+  }
 
   font-weight: 900;
   letter-spacing: 2px;
@@ -85,16 +87,22 @@ nav {
   padding: 140px 20px 120px;
   text-align: center;
   position: relative;
-  box-shadow: inset 0 0 150px rgba(0,0,0,0.7);
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.7);
   color: #fff;
+  transition: opacity 1s ease-in-out;
+  /* Transition for fading */
+  opacity: 1;
+  /* Initial visibility */
 }
 
 .hero::after {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 60%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, transparent 60%);
   z-index: 1;
 }
 
@@ -103,7 +111,7 @@ nav {
   z-index: 2;
   max-width: 800px;
   margin: 0 auto;
-  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 }
 
 .hero h1 {
@@ -124,7 +132,7 @@ nav {
   border-radius: 40px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 6px 15px rgba(243,156,18,0.7);
+  box-shadow: 0 6px 15px rgba(243, 156, 18, 0.7);
   transition: background 0.3s ease;
   user-select: none;
 }
@@ -141,7 +149,7 @@ nav {
   background-color: #121212;
   border-radius: 12px;
   margin-bottom: 50px;
-  box-shadow: 0 0 30px rgba(243,156,18,0.7);
+  box-shadow: 0 0 30px rgba(243, 156, 18, 0.7);
 }
 
 .section.light {
@@ -173,7 +181,7 @@ nav {
 .card {
   background: #222;
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(243,156,18,0.4);
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
   width: 280px;
   overflow: hidden;
   text-align: left;
@@ -184,7 +192,7 @@ nav {
 
 .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 30px rgba(243,156,18,0.8);
+  box-shadow: 0 8px 30px rgba(243, 156, 18, 0.8);
 }
 
 .card img {
@@ -219,19 +227,40 @@ textarea {
   box-shadow: inset 0 0
 }
 
-#comment-form{
+#comment-form {
   margin: 20px 0;
 
 }
 
-#comments-list > *{
+#comments-list>* {
   margin-bottom: 10px;
 }
 
-#comments-list{
+#comments-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 40px;
 
+}
+
+.hero {
+  animation: backgroundChange 10s linear infinite;
+  /* Set duration and repeat forever */
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-image: url('https://images.unsplash.com/photo-1641874536900-4a2fdc230f32?q=80&w=1198&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+
+  50% {
+    background-image: url('https://images.unsplash.com/photo-1575403404375-e48e09676c3c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
+
+  100% {
+    background-image: url('https://images.unsplash.com/photo-1566930450642-c639e92b9433?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  }
 }
